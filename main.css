@@ -243,10 +243,6 @@ input[type=number]::-webkit-outer-spin-button {
    *:focus {
       outline: none;
    }
-
-   .tabs-header-item:hover {
-      background-color: #141526;
-   }
 }
 
 @media (max-width:767px){
