@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
    margin: 0;
    box-sizing: border-box;
 }
@@ -22,6 +22,7 @@ a {
    justify-content: space-between;
    flex-direction: column;
    min-height: 100vh;
+   overflow: hidden;
 }
 
 .container {
@@ -68,10 +69,7 @@ a {
    transition: all ease .5s;
 }
 
-.tabs-header-item:hover {
-   background-color: #2e3053;
-}
-
+.tabs-header-item:hover,
 .active {
    background-color: #2e3053;
 }
@@ -100,7 +98,7 @@ a {
 
 .calc-title {
    position: absolute;
-   background-color: #141526;
+   background-color: #141526;  
    font-size: 18px;
    margin-top: -25px;
    margin-left: -65px;
@@ -132,6 +130,7 @@ a {
 /* for mozilla firefox */
 input[type=number] {
    -moz-appearance: textfield;
+   -webkit-appearance: textfield;
    appearance: textfield;
    margin: 0; 
 }
