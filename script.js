@@ -1,4 +1,4 @@
-/ TABS
+// TABS
 let tabsHeader = document.querySelector('.tabs-header'),
    tabsHeaderItem = document.getElementsByClassName('tabs-header-item'),
    tabsBodyItem = document.getElementsByClassName('tabs-body-item');
