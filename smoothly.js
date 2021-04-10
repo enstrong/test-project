@@ -25,7 +25,7 @@
        ((t,n)=>{
            e.has(t) || (t.style.transition = n)
        }
-       )(t, "all .3s ease-in-out"),
+       )(t, "all .25s ease-in-out"),
        e.has(t) || e.set(t, {
            prop: n,
            contents: [],
