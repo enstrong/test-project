@@ -1,4 +1,4 @@
-// TABS
+/ TABS
 let tabsHeader = document.querySelector('.tabs-header'),
    tabsHeaderItem = document.getElementsByClassName('tabs-header-item'),
    tabsBodyItem = document.getElementsByClassName('tabs-body-item');
@@ -48,6 +48,11 @@ buttonPpiCalc.addEventListener('click', function () {
 		 y = document.querySelector('.height').value,
 		 result = document.querySelector('.result-text-ppi'),
 		 sqroot = +(x*x) + +(y*y);
-   
-   result.innerHTML = (Math.sqrt(sqroot) / inch).toFixed(2);
+
+   function ppiResult() {
+      return `~${Math.round((Math.sqrt(sqroot) / inch))}`
+   }
+
+   const ppiResultFn = ppiResult();
+   smoothly(result, 'textContent', ppiResultFn)
 })
