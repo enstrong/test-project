@@ -27,7 +27,7 @@ a {
 
 .container {
    margin: 0px auto;
-   max-width: 1000px;
+   max-width: 1200px;
    padding: 0 15px;
 }
 
@@ -60,12 +60,16 @@ a {
 
 .tabs-header-item {
    display: inline-block;
-   padding: 4px 10px;
+   padding: 5px 10px;
+   font-size: 16px;
    line-height: 30px;
    border: 1px solid #20213e;
    border-radius: 25px;
+   background-color: #141526;
+   font-family: 'Roboto', sans-serif;
    text-align: center;
    cursor: pointer;
+   color: #fff;
    transition: all ease .5s;
 }
 
@@ -76,7 +80,7 @@ a {
 
 .description-text {
    text-align: center;
-   margin: 10px auto 20px; 
+   margin: 10px auto; 
    max-width: 40%;
    font-weight: 400;
 }
@@ -94,6 +98,7 @@ a {
    font-weight: 400;
    margin: 40px auto 25px;
    display: none;
+   max-width: 40%;
 }
 
 .calc-title {
@@ -105,21 +110,17 @@ a {
    padding: 0 10px;
 }
 
-.randomizer-main {
-   max-width: 40%;
-}
-
 .randomizer-main span {
    margin-left: -50px;
 }
 
 .from-to-text {
-   margin: 15px 0;
+   margin: 10px 0;
 }
 
 .input {
    border: 1px solid #20213e;
-   border-radius: 25px;
+   border-radius: 20px;
    padding: 5px;
    max-width: 80px;
    text-align: center;
@@ -166,19 +167,8 @@ input[type=number]::-webkit-outer-spin-button {
    opacity: .8;
 }
 
-.ppi-calculator-main {
-   max-width: 60%;
-}
-
 .from-to {
    margin-bottom: 15px;
-}
-
-.ppi-input {
-   border: 1px solid #20213e;
-   border-radius: 20px;
-   padding: 5px;
-   max-width: 80px;
 }
 
 .footer {
@@ -220,21 +210,12 @@ input[type=number]::-webkit-outer-spin-button {
       max-width: 750px;
     }
 
-   .header{
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
    .description-text{
        max-width: 70%;
     }
 
-   .randomizer-main{
+   .calc{
       max-width: 70%;
-    }
-
-   .ppi-calculator-main {
-      max-width: 90%;
     }
 }
 
@@ -253,18 +234,34 @@ input[type=number]::-webkit-outer-spin-button {
       max-width: 80%;
    }
 
-  .randomizer-main{
-     max-width: 90%;
-  }
+   .input {
+      max-width: 60px;
+   }
 }
 
-@media (max-width:425px){
+@media (max-width:500px){
    .calc {
-      max-width: 100%;
+      max-width: 95%;
+      padding: 5px;
    }  
 }
 
+@media (max-width:350px){
+   .calc {
+      max-width: 100%;
+      padding: 15px;
+   }
+
+   .input {
+      max-width: 75px;
+   }
+}
+
 @media (max-width:320px){
+   .calc {
+      padding: 5px;
+   }
+
    .button {
       padding: 10px;
       font-size: 14px;
