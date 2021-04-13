@@ -5,7 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="main.css">
+   <link rel="stylesheet" href="css/main.css">
    <title>randomizer&ppi calculator</title>
 </head>
 <body class="body">
@@ -14,8 +14,8 @@
          <div class="container">
             <div class="tabs">
                <div class="tabs-header">
-                  <div class="tabs-header-item active" data-tab="0">randomizer</div>
-                  <div class="tabs-header-item" data-tab="1">PPI calculator</div>
+                  <button class="tabs-header-item active" data-tab="0">randomizer</button>
+                  <button class="tabs-header-item" data-tab="1">PPI calculator</button>
                </div>
                <div class="tabs-body">
                   <div class="randomizer-main calc tabs-body-item" style="display: block;">
@@ -32,9 +32,9 @@
                      <div class="description">
                         <p class="description-text"><a href="https://ru.wikipedia.org/wiki/Ppi" class="description-text" target="_blank">Что такое PPI...</a></p>
                      </div>
-                     <p class="from-to-text">Ширина экрана(в пикселях): <input type="number" class="width ppi-input"></p>
-                     <p class="from-to-text">Высота экрана(в пикселях): <input type="number" class="height ppi-input"></p>
-                     <p class="from-to-text">Диагональ экрана(в дюймах): <input type="number" class="inch ppi-input"></p>
+                     <p class="from-to-text">Ширина экрана(в пикселях): <input type="number" class="width input"></p>
+                     <p class="from-to-text">Высота экрана(в пикселях): <input type="number" class="height input"></p>
+                     <p class="from-to-text">Диагональ экрана(в дюймах): <input type="number" class="inch input"></p>
                      <div class="result"><p class="result-text-ppi">᠌ ᠌᠌ ᠌ ᠌ ᠌ ᠌ ᠌᠌ ᠌᠌ ᠌ ᠌ ᠌ ᠌ ᠌</p></div> <br>
                      <button class="button button-ppi-calc">Посчитать</button> 
                   </div>
@@ -56,7 +56,7 @@
          </div>
       </div>
    </div>
-   <script src="smoothly.js"></script>
-   <script src="script.js"></script>
+   <script src="js/smoothly.js"></script>
+   <script src="js/script.js"></script>
 </body>
 </html>
